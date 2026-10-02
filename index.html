@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Janice Khang — A trace of you</title>
+  <meta name="description" content="Janice Khang, product designer. A quiet canvas that remembers how you move. Leave a trace. Hear it back.">
+  <meta name="theme-color" content="#f8f8f5">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f8f8f5'/%3E%3Cpath d='M7 24Q27 22 23 9Q20 3 14 12' fill='none' stroke='%23363632' stroke-width='1.5'/%3E%3Ccircle cx='14' cy='12' r='2' fill='%23363632'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas" tabindex="0" aria-label="Interactive trace canvas. Move your pointer or drag your finger to draw. With the canvas focused, use arrow keys to leave traces."></canvas>
+  <header><a class="wordmark" href="./" aria-label="Janice Khang home">jk<span>·</span></a><nav aria-label="Main navigation"><a href="https://janice-khang.com/" target="_blank" rel="noopener">Work <span class="link-note">(selected)</span></a><button id="about-open" aria-haspopup="dialog">About</button></nav></header>
+  <main id="identity"><div class="eyebrow"><span class="cross">+</span> A LITTLE SPACE TO LEAVE SOMETHING.</div><h1 aria-label="Janice Khang"><span class="name-line" aria-hidden="true">JANICE</span><span class="name-line" aria-hidden="true">KHANG</span></h1><div class="identity-bottom"><p>Product designer</p><span class="location">DFW, TX</span></div></main>
+  <div class="invitation" id="invitation"><span class="tiny-orbit" aria-hidden="true">◌</span><p id="hint">Move a little. Stay a while.</p></div>
+  <aside class="readout" aria-label="Live movement readout"><div><span>MOVE</span><output id="move">0.00</output></div><div><span>ENERGY</span><output id="energy">STILL</output></div><div><span>TRACE</span><output id="trace">00</output></div></aside>
+  <footer><div class="footer-label"><span class="index">01 /</span><span>A trace of you</span></div><div class="controls"><button id="clear" disabled>Clear trace</button><span class="separator" aria-hidden="true"></span><button id="hear" disabled><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 7v4h3l4 3V4L6 7H3ZM13 6q3 3 0 6"/></svg><span id="hear-label">Hear trace</span><span class="duration">03″</span></button></div><span class="footer-note">Made with your presence.</span></footer>
+  <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+  <dialog id="about"><button id="about-close" aria-label="Close about">×</button><span class="dialog-kicker">A LITTLE ABOUT ME</span><h2>Janice Khang.</h2><p>I’m a product designer based in Dallas–Fort Worth, exploring how digital things can feel a little more human.</p><p>This little corner of the internet takes its shape from you. Move, circle, pause. Then listen to what you left behind.</p><a href="https://janice-khang.com/" target="_blank" rel="noopener">Explore my work</a></dialog>
+  <script src="app.js" defer></script>
+</body></html>
